@@ -59,6 +59,7 @@ header {
     background: #1c3f94;
     margin: 0;
     position: relative;
+    float: left;
 }
 
 ul {
@@ -206,16 +207,26 @@ footer {
     .wrapper {
       width: 490px;
       padding: 20px;
-      margin: 0 auto;
-    }  
+    }
+
+    ul {
+      clear: both;
+    }
+
+  
   }
 
   @media screen and (max-width: 768px) {
   
     .wrapper {
-      width: 490px;
+      width: 100%;
       padding: 20px;
     }
+
+    ul {
+      clear: both;
+    }
+
   
   }
 
@@ -223,9 +234,23 @@ footer {
   
     .wrapper {
       width: 100%;
-      margin: 5px;
+      padding: 0px;
     }
 
+    #page-name {
+      position: static;
+      width: 100%;
+      }
+
+    ul {
+      clear: both;
+    }
+
+    main {
+      margin-bottom: 30px;
+      clear: both;
+    }
+  
   
   }
 
